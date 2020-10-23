@@ -2,39 +2,39 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{7d17d310-9655-4640-9d72-abb7c0fe0bc6}</UniqueIdentifier>
+      <UniqueIdentifier>{1bfbec60-a960-4352-b777-876e2186a329}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
     <Filter Include="Source Files\Utils">
-      <UniqueIdentifier>{1e313975-0756-4625-a65a-297ff225ada1}</UniqueIdentifier>
+      <UniqueIdentifier>{ef32b283-aae9-43ac-aa59-aa05e32dc639}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Core">
-      <UniqueIdentifier>{f7184c42-483c-41c1-a76d-59a5a9f76ee4}</UniqueIdentifier>
+      <UniqueIdentifier>{d19b5883-e77f-46e4-994d-724330bb1483}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Layout">
-      <UniqueIdentifier>{3e8f088f-a5b6-40e1-8042-40354cc25b8d}</UniqueIdentifier>
+      <UniqueIdentifier>{92a34f59-fa03-4a92-b1dc-050761f08e58}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Control">
-      <UniqueIdentifier>{eaa8f7be-293a-46de-834f-071a9a441a28}</UniqueIdentifier>
+      <UniqueIdentifier>{9bc14036-6ebd-4161-91da-33fd8dfaa32a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{44fffdff-1307-447a-873d-d0cc2e94a7ce}</UniqueIdentifier>
+      <UniqueIdentifier>{e9871abf-0ace-46b7-a139-2fea9c7260ec}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
     <Filter Include="Header Files\Utils">
-      <UniqueIdentifier>{2f0ac3de-1412-4d51-a46c-59a70d45e4b5}</UniqueIdentifier>
+      <UniqueIdentifier>{655aea62-cdea-4764-96a3-0228da210f0a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Core">
-      <UniqueIdentifier>{f7a96342-a157-41bb-a57d-d283f6a9b11e}</UniqueIdentifier>
+      <UniqueIdentifier>{d446ad69-9cdb-42bf-a236-0681ec4fd2fa}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Layout">
-      <UniqueIdentifier>{7e3238a6-3b1f-4c5a-9454-15ebb7dd7290}</UniqueIdentifier>
+      <UniqueIdentifier>{896c84c0-385d-42d4-a76c-d33b97ea8d26}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Control">
-      <UniqueIdentifier>{9d25d6fa-9ff9-4ebd-a5a9-20302dd1c58a}</UniqueIdentifier>
+      <UniqueIdentifier>{2026f785-0362-4720-ab66-ae811cfe1a06}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{c6069066-0c47-4447-90dc-5ca0e3e72cc6}</UniqueIdentifier>
+      <UniqueIdentifier>{91838291-0226-4760-9a7c-3278d0f1d246}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
   </ItemGroup>
@@ -52,6 +52,9 @@
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
     <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\WinImplBase.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
     <ClCompile Include="Utils\XUnzip.cpp">
@@ -111,6 +114,9 @@
     <ClCompile Include="Control\UIEdit.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
+    <ClCompile Include="Control\UIGifAnim.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
     <ClCompile Include="Control\UILabel.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
@@ -135,19 +141,10 @@
     <ClCompile Include="Control\UIText.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
-    <ClCompile Include="Control\UIWebBrowser.cpp">
-      <Filter>Source Files\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="Control\UIGifAnim.cpp">
-      <Filter>Source Files\Control</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils\WndShadow.cpp">
-      <Filter>Source Files\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils\WinImplBase.cpp">
-      <Filter>Source Files\Utils</Filter>
-    </ClCompile>
     <ClCompile Include="Control\UITreeView.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIWebBrowser.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
   </ItemGroup>
@@ -236,6 +233,9 @@
     <ClInclude Include="Control\UIEdit.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
+    <ClInclude Include="Control\UIGifAnim.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
     <ClInclude Include="Control\UILabel.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
@@ -260,16 +260,10 @@
     <ClInclude Include="Control\UIText.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
-    <ClInclude Include="Control\UIWebBrowser.h">
-      <Filter>Header Files\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="Control\UIGifAnim.h">
-      <Filter>Header Files\Control</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils\WndShadow.h">
-      <Filter>Header Files\Utils</Filter>
-    </ClInclude>
     <ClInclude Include="Control\UITreeView.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIWebBrowser.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
   </ItemGroup>
